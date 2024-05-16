@@ -1,6 +1,6 @@
 Starting Dynare (version 6.1).
 Calling Dynare with arguments: none
-Preprocessing time: 0h00m00s.
+Preprocessing time: 0h00m01s.
 
 STEADY-STATE RESULTS:
 
@@ -113,4 +113,4 @@ a_1                0.00            100.11              0.00            100.11
 a_2                0.00              0.00            100.11            100.11
 Note: numbers do not add up to 100 due to non-zero correlation of simulated shocks in small samples
 
-Total computing time : 0h00m00s
+Total computing time : 0h00m01s
