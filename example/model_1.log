@@ -1,0 +1,70 @@
+Starting Dynare (version 6.1).
+Calling Dynare with arguments: none
+Preprocessing time: 0h00m01s.
+
+MODEL SUMMARY
+
+  Number of variables:         6
+  Number of stochastic shocks: 2
+  Number of state variables:   3
+  Number of jumpers:           3
+  Number of static variables:  1
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables           e         u
+e            0.000081  0.000008
+u            0.000008  0.000081
+
+POLICY AND TRANSITION FUNCTIONS
+                                   y               c               k               a               h               b
+Constant                    1.080683        0.803592       11.083604               0        0.291756               0
+k(-1)                       0.005358        0.038542        0.941817               0       -0.012547               0
+a(-1)                       1.836717        0.424583        1.419062        0.950000        0.341715        0.025000
+b(-1)                       0.837086       -0.318740        1.419062        0.025000        0.341715        0.950000
+e                           1.911522        0.456074        1.455448        1.000000        0.350477               0
+u                           0.830840       -0.347518        1.455448               0        0.350477        1.000000
+
+
+MOMENTS OF SIMULATED VARIABLES
+VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+y                 1.075621        0.087415        0.007641       -1.038713        2.598399
+c                 0.800553        0.050512        0.002551       -1.238174        2.736712
+k                11.021824        1.156300        1.337031       -1.138732        2.246518
+a                -0.002124        0.034167        0.001167       -1.026977        2.404789
+h                 0.291493        0.012638        0.000160        0.004834        0.554570
+b                -0.000812        0.032010        0.001025       -0.308663       -0.320459
+
+
+CORRELATION OF SIMULATED VARIABLES
+VARIABLE         y       c       k       a       h       b
+y           1.0000  0.8475  0.8346  0.9591  0.6376  0.7428
+c           0.8475  1.0000  0.9671  0.8367  0.1314  0.5054
+k           0.8346  0.9671  1.0000  0.7518  0.1552  0.6642
+a           0.9591  0.8367  0.7518  1.0000  0.5768  0.5265
+h           0.6376  0.1314  0.1552  0.5768  1.0000  0.6537
+b           0.7428  0.5054  0.6642  0.5265  0.6537  1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+VARIABLE         1       2       3       4       5
+y           0.9715  0.9440  0.9173  0.8909  0.8651
+c           0.9928  0.9852  0.9768  0.9666  0.9555
+k           0.9979  0.9950  0.9905  0.9844  0.9768
+a           0.9594  0.9212  0.8858  0.8502  0.8162
+h           0.9228  0.8496  0.7818  0.7181  0.6592
+b           0.9585  0.9202  0.8860  0.8506  0.8170
+
+
+
+VARIANCE DECOMPOSITION SIMULATING ONE SHOCK AT A TIME (in percent)
+                    e                 u  Tot. lin. contr.
+y               75.96             33.55            109.51
+c               72.14             40.15            112.30
+k               66.01             57.10            123.11
+a               90.02             12.44            102.46
+h               52.19             40.56             92.75
+b               19.94             98.55            118.49
+Note: numbers do not add up to 100 due to non-zero correlation of simulated shocks in small samples
+
+Total computing time : 0h00m01s
