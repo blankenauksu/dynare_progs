@@ -7,13 +7,13 @@ if size(T, 1) < 16
     T = [T; NaN(16 - size(T, 1), 1)];
 end
 T(1) = (params(1)-1)/params(1);
-T(2) = params(6)*y(15)^T(1)+params(7)*y(16)^T(1)+params(8)*y(17)^T(1);
+T(2) = params(5)*y(15)^T(1)+params(6)*y(16)^T(1)+params(7)*y(17)^T(1);
 T(3) = T(2)^((1-params(1)*params(2))/(params(1)-1));
 T(4) = (-1)/params(1);
-T(5) = params(6)*y(15)^T(4);
-T(6) = params(7)*y(16)^T(4);
-T(7) = params(8)*y(17)^T(4);
-T(8) = params(6)*y(25)^T(4);
+T(5) = params(5)*y(15)^T(4);
+T(6) = params(6)*y(16)^T(4);
+T(7) = params(7)*y(17)^T(4);
+T(8) = params(5)*y(25)^T(4);
 T(9) = y(4)^(params(3)-1);
 T(10) = y(14)^(params(3)-1);
 T(11) = y(4)^params(3);
