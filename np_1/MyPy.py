@@ -20,7 +20,7 @@ class DyPy:
     def list_irfs(self):
         return sorted((attr for attr in dir(self) if attr.startswith('ir_')), key=lambda x: x[-1])
     
-    def plot_irfs(self, end_char, cols=4):
+    def plot_irfs(self, end_char, cols=5):
         tot = len({key[-1] for key in self.dict_irfs.keys() if key[-1] == end_char})
         tot = len({key[-1] for key in self.dict_irfs.keys()})
         rows = math.ceil(len(self.dict_irfs) / (tot * cols))
