@@ -4,11 +4,17 @@ om_0*c_0^((eps-1)/eps)+
 om_1*c_1^((eps-1)/eps)+
 om_2*c_2^((eps-1)/eps)
 )^((1-tht*eps)/(eps-1));
+# ph_plus=(
+om_0*c_0(+1)^((eps-1)/eps)+
+om_1*c_1(+1)^((eps-1)/eps)+
+om_2*c_2(+1)^((eps-1)/eps)
+)^((1-tht*eps)/(eps-1));
+
 
 # v_0=om_0*c_0^(-1/eps)*ph;
 # v_1=om_1*c_1^(-1/eps)*ph;
 # v_2=om_2*c_2^(-1/eps)*ph;
-# v_0lead=om_0*c_0(+1)^(-1/eps)*ph;
+# v_0lead=om_0*c_0(+1)^(-1/eps)*ph_plus;
 
 # fk_0=exp(a_0)*n_0*alf*k(-1)^(alf-1);
 # fk_1=exp(a_1)*n_1*alf*k(-1)^(alf-1);
