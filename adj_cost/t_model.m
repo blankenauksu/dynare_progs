@@ -69,13 +69,13 @@ v_2*fs_2=v_0*fs_0;
 
 bet*(fs_0plus/k+z_2plus/z_1plus)=v_0/v_plus0/z_1;
 
-k=(1-delt)*k(-1)+i-psi_k/2*(1/k(-1)-delt)^2*k(-1);
+k=(1-delt)*k(-1)+i-psi_k/2*(i/k(-1)-delt)^2*k(-1);
 
 1=n_0+n_1+n_2;
 
 1=s_0+s_1+s_2;
 
-c_0=exp(a_0)*n_0^(1-alf)*s_0^alf*k(-1)^alf+(1-delt)*k(-1)-k;
+c_0=exp(a_0)*n_0^(1-alf)*s_0^alf*k(-1)^alf-i;
 c_1=exp(a_1)*n_1^(1-alf)*s_1^alf*k(-1)^alf;
 c_2=exp(a_2)*n_2^(1-alf)*s_2^alf*k(-1)^alf;
 
