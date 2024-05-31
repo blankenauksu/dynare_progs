@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from scipy.optimize import root
 import math
 
+
 class DyPy:
     def __init__(self, x):
         """Initializes the class with a dictionary of arrays."""
@@ -10,12 +11,22 @@ class DyPy:
         """Converts the dictionary of arrays into attributes of the class."""
         for key, value in self.oo_dict.items():
             setattr(self, key, value)
-        dict_irfs = self.irfs.item()
-        self.dict_irfs = {key: np.array(value) for key, value in dict_irfs.items()}
-        for key, value in self.dict_irfs.items():
-            if key!='list':
-                setattr(self, 'ir_'+ key, value)
-        self.list_irfs = self.list_irfs()
+        self.ir_d=self.Ir_function_d()    
+        
+        
+        class Ir_function_d:
+            def __init__(self):
+                self.dict_irfs = {key: np.array(value) for key, value in self.dict_irfs.items()}
+                for key, value in self.dict_irfs.items():
+                    if key!='list':
+                        setattr(self, 'ir_'+ key, value)
+                    #self.list_irfs = self.list_irfs()
+                #dict_irfs = self.irfs.item()
+                #self.DyPy.dict_irfs = {key: np.array(value) for key, value in dict_irfs.items()}
+                #for key, value in self.dict_irfs.items():
+                #    if key!='list':
+                #        setattr(self, 'ir_'+ key, value)
+                #self.list_irfs = self.list_irfs()
         
     def list_irfs(self):
         return sorted((attr for attr in dir(self) if attr.startswith('ir_')), key=lambda x: x[-1])
@@ -33,4 +44,17 @@ class DyPy:
         plt.tight_layout()  # Adjust subplot parameters to prevent overlap
         plt.show()
         
+class OuterClass:
+    def __init__(self):
+        self.outer_attr = "Outer Attribute"
+        self.inner = self.InnerClass()
+    
+    def outer_method(self):
+        print("Outer Method")
+    
+    class InnerClass:
+        def __init__(self):
+            self.inner_attr = "Inner Attribute"
         
+        def inner_method(self):
+            print("Inner Method")        
