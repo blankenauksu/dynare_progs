@@ -23,18 +23,14 @@ om_2*c_2(+1)^((eps-1)/eps)
 # fn_1=exp(a_1)*(1-alf)*(s_1/n_1)^alf*k(-1)^alf;
 # fn_2=exp(a_2)*(1-alf)*(s_2/n_2)^alf*k(-1)^alf;
 
+# fn_plus0=exp(a_0(+1))*(1-alf)*(s_0(+1)/n_0(+1))^alf*k^alf;
+# fn_plus1=exp(a_1(+1))*(1-alf)*(s_1(+1)/n_1(+1))^alf*k^alf;
+# fn_plus2=exp(a_2(+1))*(1-alf)*(s_2(+1)/n_2(+1))^alf*k^alf;
+
 # fs_0=exp(a_0)*alf*(n_0/s_0)^(1-alf)*k(-1)^alf;
 # fs_1=exp(a_1)*alf*(n_1/s_1)^(1-alf)*k(-1)^alf;
 # fs_2=exp(a_2)*alf*(n_2/s_2)^(1-alf)*k(-1)^alf;
 # fs_0plus=exp(a_0(+1))*alf*(n_0(+1)/s_0(+1))^(1-alf)*k^alf;
-
-# fk_0=exp(a_0)*alf*(s_0/n_0*k(-1))^alf;
-# fk_1=exp(a_1)*alf*(s_1/n_1*k(-1))^alf;
-# fk_2=exp(a_2)*alf*(s_2/n_2*k(-1))^alf;
-
-# fk_plus0=exp(a_0(+1))*alf*(s_0(+1)/n_0(+1)*k)^alf;
-# fk_plus1=exp(a_1(+1))*alf*(s_1(+1)/n_1(+1)*k)^alf;
-# fk_plus2=exp(a_2(+1))*alf*(s_2(+1)/n_2(+1)*k)^alf;
 
 # q_0=(1-psi_n/2*(n_0/n_0(-1)-1)^2);
 # q_1=(1-psi_n/2*(n_1/n_1(-1)-1)^2);
@@ -44,13 +40,13 @@ om_2*c_2(+1)^((eps-1)/eps)
 # q_plus1=(1-psi_n/2*(n_1(+1)/n_1-1)^2);
 # q_plus2=(1-psi_n/2*(n_2(+1)/n_2-1)^2);
 
-# x_10=fk_0*q_0^(1-alf)-n_0*psi_n/q_0^alf/n_0(-1)*(n_0/n_0(-1)-1);
-# x_11=fk_1*q_1^(1-alf)-n_1*psi_n/q_1^alf/n_1(-1)*(n_1/n_1(-1)-1);
-# x_12=fk_2*q_2^(1-alf)-n_2*psi_n/q_2^alf/n_2(-1)*(n_2/n_2(-1)-1);
+# x_10=fn_0*(q_0^(1-alf)-n_0*psi_n/q_0^alf/n_0(-1)*(n_0/n_0(-1)-1));
+# x_11=fn_1*(q_1^(1-alf)-n_1*psi_n/q_1^alf/n_1(-1)*(n_1/n_1(-1)-1));
+# x_12=fn_2*(q_2^(1-alf)-n_2*psi_n/q_2^alf/n_2(-1)*(n_2/n_2(-1)-1));
 
-# x_20plus=fk_plus0*psi_n/q_plus0^alf*(n_0(+1)/n_0-1)*(n_0(+1)/n_0)^2;
-# x_21plus=fk_plus1*psi_n/q_plus1^alf*(n_1(+1)/n_1-1)*(n_1(+1)/n_1)^2;
-# x_22plus=fk_plus2*psi_n/q_plus2^alf*(n_2(+1)/n_2-1)*(n_2(+1)/n_2)^2;
+# x_20plus=fn_plus0*psi_n/q_plus0^alf*(n_0(+1)/n_0-1)*(n_0(+1)/n_0)^2;
+# x_21plus=fn_plus1*psi_n/q_plus1^alf*(n_1(+1)/n_1-1)*(n_1(+1)/n_1)^2;
+# x_22plus=fn_plus2*psi_n/q_plus2^alf*(n_2(+1)/n_2-1)*(n_2(+1)/n_2)^2;
 
 # z_1=1-psi_k*(i/k(-1)-delt);
 # z_1plus=1-psi_k*(i(+1)/k-delt);
@@ -61,8 +57,8 @@ k_0=s_0/n_0*k(-1);
 k_1=s_1/n_1*k(-1);
 k_2=s_2/n_2*k(-1);
 
-v_1*x_11*fn_1+v_plus1*x_21plus*fn_1=v_0*x_10*fn_0+v_plus0*x_20plus*fn_0;
-v_2*x_12*fn_2+v_plus2*x_22plus*fn_2=v_0*x_10*fn_0+v_plus0*x_20plus*fn_0;
+v_1*x_11*fn_1+v_plus1*x_21plus*fn_plus1=v_0*x_10*fn_0+v_plus0*x_20plus*fn_plus0;
+v_2*x_12*fn_2+v_plus2*x_22plus*fn_plus2=v_0*x_10*fn_0+v_plus0*x_20plus*fn_plus0;
 
 v_1*fs_1=v_0*fs_0;
 v_2*fs_2=v_0*fs_0;
@@ -75,9 +71,9 @@ k=(1-delt)*k(-1)+i-psi_k/2*(i/k(-1)-delt)^2*k(-1);
 
 1=s_0+s_1+s_2;
 
-c_0=exp(a_0)*n_0^(1-alf)*s_0^alf*k(-1)^alf-i;
-c_1=exp(a_1)*n_1^(1-alf)*s_1^alf*k(-1)^alf;
-c_2=exp(a_2)*n_2^(1-alf)*s_2^alf*k(-1)^alf;
+c_0=exp(a_0)*n_0^(1-alf)*q_0^(1-alf)*s_0^alf*k(-1)^alf-i;
+c_1=exp(a_1)*n_1^(1-alf)*q_1^(1-alf)*s_1^alf*k(-1)^alf;
+c_2=exp(a_2)*n_2^(1-alf)*q_2^(1-alf)*s_2^alf*k(-1)^alf;
 
 a_0=rho_a_0*a_0(-1)+a_0_shock;
 a_1=rho_a_1*a_1(-1)+a_1_shock;
