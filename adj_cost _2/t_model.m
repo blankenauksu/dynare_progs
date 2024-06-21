@@ -40,13 +40,13 @@ om_2*c_2(+1)^((eps-1)/eps)
 # q_plus1=(1-psi_n/2*(n_1(+1)/n_1-1)^2);
 # q_plus2=(1-psi_n/2*(n_2(+1)/n_2-1)^2);
 
-# x_10=fn_0*(q_0^(1-alf)-n_0*psi_n/q_0^alf/n_0(-1)*(n_0/n_0(-1)-1));
-# x_11=fn_1*(q_1^(1-alf)-n_1*psi_n/q_1^alf/n_1(-1)*(n_1/n_1(-1)-1));
-# x_12=fn_2*(q_2^(1-alf)-n_2*psi_n/q_2^alf/n_2(-1)*(n_2/n_2(-1)-1));
+# x_10=(q_0^(1-alf)-n_0*psi_n/q_0^alf/n_0(-1)*(n_0/n_0(-1)-1));
+# x_11=(q_1^(1-alf)-n_1*psi_n/q_1^alf/n_1(-1)*(n_1/n_1(-1)-1));
+# x_12=(q_2^(1-alf)-n_2*psi_n/q_2^alf/n_2(-1)*(n_2/n_2(-1)-1));
 
-# x_20plus=fn_plus0*psi_n/q_plus0^alf*(n_0(+1)/n_0-1)*(n_0(+1)/n_0)^2;
-# x_21plus=fn_plus1*psi_n/q_plus1^alf*(n_1(+1)/n_1-1)*(n_1(+1)/n_1)^2;
-# x_22plus=fn_plus2*psi_n/q_plus2^alf*(n_2(+1)/n_2-1)*(n_2(+1)/n_2)^2;
+# x_20plus=psi_n/q_plus0^alf*(n_0(+1)/n_0-1)*(n_0(+1)/n_0)^2;
+# x_21plus=psi_n/q_plus1^alf*(n_1(+1)/n_1-1)*(n_1(+1)/n_1)^2;
+# x_22plus=psi_n/q_plus2^alf*(n_2(+1)/n_2-1)*(n_2(+1)/n_2)^2;
 
 # z_1=1-psi_k*(i/k(-1)-delt);
 # z_1plus=1-psi_k*(i(+1)/k-delt);
