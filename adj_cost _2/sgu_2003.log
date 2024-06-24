@@ -1,0 +1,160 @@
+Starting Dynare (version 6.1).
+Calling Dynare with arguments: none
+Preprocessing time: 0h00m01s.
+
+
+Residuals of the static equations:
+Equation number  1: Eq. (4), Evolution of debt                         :       0.000000
+Equation number  2: Eq. (5), Production function                       :       0.000000
+Equation number  3: Eq. (6), Law of motion for capital                 :       0.000000
+Equation number  4: Eq. (24), Euler equation                           :       0.000000
+Equation number  5: Eq. (25), Definition marginal utility              :       0.000000
+Equation number  6: Eq. (26), Labor FOC                                :       0.000000
+Equation number  7: Eq. (27), Investment FOC                           :       0.000000
+Equation number  8: Eq. (14), Law of motion for TFP                    :       0.000000
+Equation number  9: Eq. (23), country interest rate                    :       0.000000
+Equation number 10: p. 169, Definition of trade balance to ouput ratio :       0.000000
+Equation number 11: ca_y                                               :       0.000000
+Equation number 12: Definition felicity function                       :       0.000000
+
+
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+       5.237e-18        5.237e-18                0
+            0.42             0.42                0
+          0.4855           0.4855                0
+               1                1                0
+            1.04             1.04                0
+           2.142            2.142                0
+       3.437e+16        3.437e+16                0
+
+There are 3 eigenvalue(s) larger than 1 in modulus for 3 forward-looking variable(s)
+The rank condition is verified.
+
+warning: Some of the parameters have no value (beta) when using steady. If these parameters are not initialized in a steadystate file or a steady_state_model-block, Dynare may not be able to solve the model. Note that simul, perfect_foresight_setup, and perfect_foresight_solver do not automatically call the steady state file.
+
+STEADY-STATE RESULTS:
+
+c      		 0.110602
+h      		 0.00739062
+y      		 0.396416
+i      		 -1.07949
+k      		 1.22309
+a      		 0
+lambda 		 1.72439
+util   		 -1.36835
+d      		 0.7442
+tb_y   		 0.0200257
+ca_y   		 0
+r      		 -3.21888
+
+MODEL SUMMARY
+
+  Number of variables:         12
+  Number of stochastic shocks: 1
+  Number of state variables:   4
+  Number of jumpers:           3
+  Number of static variables:  6
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables           e
+e            1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                   c               h               y               i               k               a          lambda            util               d            tb_y            ca_y               r
+Constant                    0.110602        0.007391        0.396416       -1.079491        1.223094               0        1.724386       -1.368349        0.744200        0.020026               0       -3.218876
+a(-1)                       0.526499        0.541935        0.788516        2.830242        0.283024        0.420000       -0.190790        0.225928        0.377582       -0.269800       -0.254009               0
+d(-1)                      -0.035812               0               0               0               0               0        0.189468       -0.224363        1.000000        0.026909               0               0
+r(-1)                      -0.001025               0               0               0               0               0        0.005423       -0.006422        0.028623        0.000770       -0.019256               0
+k(-1)                       0.495344        0.412903        0.600774       -4.144634        0.485537               0       -0.643752        0.762315       -1.747985        1.163885        1.175916               0
+e                           0.016171        0.016645        0.024219        0.086929        0.008693        0.012900       -0.005860        0.006939        0.011597       -0.008287       -0.007802               0
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+c                 NaN        NaN        NaN
+h              0.0074     0.0211     0.0004
+y              0.3964     0.0307     0.0009
+i             -1.0795     0.0910     0.0083
+k              1.2231     0.0135     0.0002
+a              0.0000     0.0142     0.0002
+lambda            NaN        NaN        NaN
+util              NaN        NaN        NaN
+d                 NaN        NaN        NaN
+tb_y              NaN        NaN        NaN
+ca_y           0.0000     0.0149     0.0002
+r             -3.2189     0.0000     0.0000
+
+
+
+MATRIX OF CORRELATIONS
+Variables          h        y        i        k        a     ca_y
+h             1.0000   1.0000   0.6581   0.9760   0.9696   0.0685
+y             1.0000   1.0000   0.6581   0.9760   0.9696   0.0685
+i             0.6581   0.6581   1.0000   0.4783   0.8224  -0.7061
+k             0.9760   0.9760   0.4783   1.0000   0.8930   0.2841
+a             0.9696   0.9696   0.8224   0.8930   1.0000  -0.1778
+ca_y          0.0685   0.0685  -0.7061   0.2841  -0.1778   1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order           1        2        3        4        5
+h          0.6122   0.3505   0.1925   0.1029   0.0539
+y          0.6122   0.3505   0.1925   0.1029   0.0539
+i          0.0700  -0.1405  -0.1415  -0.0995  -0.0612
+k          0.7522   0.4772   0.2787   0.1551   0.0836
+a          0.4200   0.1764   0.0741   0.0311   0.0131
+ca_y       0.3446   0.1082   0.0277   0.0030  -0.0029
+
+std(y):              	 3.1 
+std(c):                	 NaN 
+std(i):                	 9.1 
+std(h):                	 2.1 
+std(tb/y):             	 NaN 
+std(ca/y):             	 1.5 
+corr(y_t,y_t-1):       	 0.61 
+corr(c_t,c_t-1):       	 NaN 
+corr(i_t,i_t-1):       	 0.070 
+corr(h_t,h_t-1):       	 0.61 
+corr(tb/y_t,tb/y_t-1): 	 NaN 
+corr(ca/y_t,ca/y_t-1): 	 0.34 
+corr(c_t,y_t):         	 NaN 
+corr(i_t,y_t):         	 0.66 
+corr(h_t,y_t):         	 1.0 
+corr(tb/y_t,y_t):      	  NaN 
+corr(ca/y_t,y_t):      	 0.068 
+
+MODEL SUMMARY
+
+  Number of variables:         12
+  Number of stochastic shocks: 1
+  Number of state variables:   4
+  Number of jumpers:           3
+  Number of static variables:  6
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables              e
+e            6009.254252
+
+POLICY AND TRANSITION FUNCTIONS
+                                   c               h               y               i               k               a          lambda            util               d            tb_y            ca_y               r
+Constant                    0.110602        0.007391        0.396416       -1.079491        1.223094               0        1.724386       -1.368349        0.744200        0.020026               0       -3.218876
+a(-1)                       0.526499        0.541935        0.788516        2.830242        0.283024        0.420000       -0.190790        0.225928        0.377582       -0.269800       -0.254009               0
+d(-1)                      -0.035812               0               0               0               0               0        0.189468       -0.224363        1.000000        0.026909               0               0
+r(-1)                      -0.001025               0               0               0               0               0        0.005423       -0.006422        0.028623        0.000770       -0.019256               0
+k(-1)                       0.495344        0.412903        0.600774       -4.144634        0.485537               0       -0.643752        0.762315       -1.747985        1.163885        1.175916               0
+e                           0.016171        0.016645        0.024219        0.086929        0.008693        0.012900       -0.005860        0.006939        0.011597       -0.008287       -0.007802               0
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+c                 NaN        NaN        NaN
+h              0.0074     1.6333     2.6675
+y              0.3964     2.3764     5.6472
+i             -1.0795     7.0544    49.7649
+k              1.2231     1.0445     1.0910
+a              0.0000     1.1019     1.2142
