@@ -79,6 +79,14 @@ a_0=rho_a_0*a_0(-1)+a_0_shock;
 a_1=rho_a_1*a_1(-1)+a_1_shock;
 a_2=rho_a_2*a_2(-1)+a_2_shock;
 
+
+y_0=c_0+i
+y=y_0+
+om_1/om_0*(c_1/c_0)^(-1/eps)*c_1+
+om_2/om_0*(c_2/c_0)^(-1/eps)*c_2
+;
+
+
 end;
 
 

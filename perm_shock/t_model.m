@@ -74,7 +74,7 @@ k=(1-delt)*k(-1)+i-psi_k/2*(i/k(-1)-delt)^2*k(-1);
 c_0=exp(a_0)*n_0^(1-alf)*q_0^(1-alf)*s_0^alf*k(-1)^alf-i;
 c_1=exp(a_1)*n_1^(1-alf)*q_1^(1-alf)*s_1^alf*k(-1)^alf;
 c_2=exp(a_2)*n_2^(1-alf)*q_2^(1-alf)*s_2^alf*k(-1)^alf;
-r=k^alph
+
 end;
 
 

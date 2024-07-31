@@ -656,7 +656,7 @@ oo_.dr.eigval = check(M_,options_,oo_);
 options_.irf = 100;
 options_.nograph = true;
 options_.order = 1;
-options_.periods = 1000;
+options_.periods = 10000;
 var_list_ = {};
 [info, oo_, options_, M_] = stoch_simul(M_, options_, oo_, var_list_);
 

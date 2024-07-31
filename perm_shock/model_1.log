@@ -46,16 +46,16 @@ The rank condition is verified.
 --------------------------------------------------------
 MODEL SIMULATION:
 
-Iter: 1,	 err. = 1.03224,	 time = 2.19194
-Iter: 2,	 err. = 0.336588,	 time = 2.65078
-Iter: 3,	 err. = 0.0698239,	 time = 2.40874
-Iter: 4,	 err. = 0.00322113,	 time = 4.2317
-Iter: 5,	 err. = 4.67047e-06,	 time = 2.48827
+Iter: 1,	 err. = 1.03224,	 time = 1.24831
+Iter: 2,	 err. = 0.336588,	 time = 1.25251
+Iter: 3,	 err. = 0.0698239,	 time = 1.3819
+Iter: 4,	 err. = 0.00322113,	 time = 1.49898
+Iter: 5,	 err. = 4.67047e-06,	 time = 1.30247
 
-Total time of simulation: 14.0293.
+Total time of simulation: 6.7091.
 --------------------------------------------------------
 
 
 Perfect foresight solution found.
 
-Total computing time : 0h00m15s
+Total computing time : 0h00m07s
