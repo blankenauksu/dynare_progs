@@ -1,0 +1,61 @@
+function [g1, T_order, T] = dynamic_g1(y, x, params, steady_state, sparse_rowval, sparse_colval, sparse_colptr, T_order, T)
+if nargin < 9
+    T_order = -1;
+    T = NaN(16, 1);
+end
+[T_order, T] = sgu_2003.sparse.dynamic_g1_tt(y, x, params, steady_state, T_order, T);
+g1_v = NaN(48, 1);
+g1_v(1)=(-T(15));
+g1_v(2)=(-(T(3)*exp(y(18))*exp(y(5))*getPowerDeriv(exp(y(5)),params(8),1)));
+g1_v(3)=(-(exp(y(5))*(1-params(5))));
+g1_v(4)=exp(y(19))*params(9)*(-exp(y(5)));
+g1_v(5)=T(15)/exp(y(15));
+g1_v(6)=(-params(3));
+g1_v(7)=(-(1+exp(y(12))));
+g1_v(8)=(-(1/exp(y(15))));
+g1_v(9)=(-(exp(y(12))*y(9)));
+g1_v(10)=(-exp(y(13)));
+g1_v(11)=exp(y(13))*T(10);
+g1_v(12)=T(6)*exp(y(13))*T(10);
+g1_v(13)=exp(y(13))/exp(y(15));
+g1_v(14)=(-(exp(y(13))*T(11)/(1-params(1))));
+g1_v(15)=(-(T(2)*exp(y(14))*getPowerDeriv(exp(y(14)),1-params(8),1)));
+g1_v(16)=T(13);
+g1_v(17)=T(6)*T(13)+T(5)*exp(y(14))*getPowerDeriv(exp(y(14)),params(2)-1,1)-(-(exp(y(14))*exp(y(15))*(1-params(8))*exp(y(19))))/(exp(y(14))*exp(y(14)));
+g1_v(18)=(-(T(11)*(-(T(8)*T(12)))/(1-params(1))));
+g1_v(19)=exp(y(15));
+g1_v(20)=exp(y(15));
+g1_v(21)=T(14);
+g1_v(22)=(-(exp(y(15))*(T(1)+exp(y(13))+exp(y(16)))))/(exp(y(15))*exp(y(15)));
+g1_v(23)=(-((y(9)-y(21))*(-exp(y(15)))/(exp(y(15))*exp(y(15)))));
+g1_v(24)=(-exp(y(16)));
+g1_v(25)=(-exp(y(16)));
+g1_v(26)=exp(y(16))/exp(y(15));
+g1_v(27)=(-T(16));
+g1_v(28)=exp(y(17));
+g1_v(29)=exp(y(19))*params(9)*exp(y(17))-params(14)*exp(y(31))*((-(exp(y(17))*params(8)*exp(y(27))))/(exp(y(17))*exp(y(17)))+params(9)*(-exp(y(17))));
+g1_v(30)=T(16)/exp(y(15));
+g1_v(31)=(-(T(2)*T(3)));
+g1_v(32)=1;
+g1_v(33)=exp(y(19));
+g1_v(34)=(-exp(y(19)));
+g1_v(35)=T(14);
+g1_v(36)=exp(y(19))*(1+params(9)*(exp(y(17))-exp(y(5))));
+g1_v(37)=1;
+g1_v(38)=1;
+g1_v(39)=1/exp(y(15));
+g1_v(40)=1;
+g1_v(41)=1;
+g1_v(42)=(-(exp(y(31))*params(14)*exp(y(24))));
+g1_v(43)=exp(y(24));
+g1_v(44)=(-(params(14)*exp(y(31))*params(8)*exp(y(27))/exp(y(17))));
+g1_v(45)=(-(params(14)*exp(y(31))*params(9)*exp(y(29))));
+g1_v(46)=(-(params(14)*(1+exp(y(24)))*exp(y(31))));
+g1_v(47)=(-T(7));
+g1_v(48)=(-params(4));
+if ~isoctave && matlab_ver_less_than('9.8')
+    sparse_rowval = double(sparse_rowval);
+    sparse_colval = double(sparse_colval);
+end
+g1 = sparse(sparse_rowval, sparse_colval, g1_v, 12, 37);
+end
