@@ -1,0 +1,31 @@
+Starting Dynare (version 6.1).
+Calling Dynare with arguments: none
+Preprocessing time: 0h00m00s.
+
+
+Residuals of the static equations:
+Equation number  1: n0     :            NaN
+Equation number  2: s0     :            NaN
+Equation number  3: c0     :      -0.068904
+Equation number  4: y      :            NaN
+Equation number  5: 5      :       0.000000
+Equation number  6: a0     :       0.000000
+Equation number  7: a1     :       0.000000
+Equation number  8: a2     :       0.000000
+Equation number  9: a3     :       0.000000
+Equation number 10: a4     :       0.000000
+Equation number 11: a5     :       0.000000
+Equation number 12: a6     :       0.000000
+Equation number 13: a7     :       0.000000
+Equation number 14: a8     :       0.000000
+Equation number 15: theta0 :      -0.286364
+Equation number 16: theta1 :      -0.286364
+Equation number 17: theta2 :      -0.286364
+Equation number 18: theta3 :      -0.286364
+Equation number 19: theta4 :      -0.286364
+Equation number 20: theta5 :      -0.286364
+Equation number 21: theta6 :      -0.286364
+Equation number 22: theta7 :      -0.286364
+Equation number 23: theta8 :      -0.286364
+
+
