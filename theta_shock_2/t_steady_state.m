@@ -34,6 +34,7 @@ i=k*(1+gamman)*(1+gamma0)-(1-delt)*k;
 n0=(1-theta_mean0)*(1-coy*(1-x0ss/Xss))/(1-theta_mean0-coy*Qss);
 y=(k*s0on0)^theta_mean0*(1-theta_mean0)/(1-theta_mean0-coy*Qss);
 c=coy*y;
+s0=s0on0*n0;
 
 theta0=theta_mean0;
 theta1=theta_mean1;

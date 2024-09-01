@@ -1,6 +1,5 @@
 model;
 
-#s0=(theta0/(c/(c(-1)*bet)-1+delt))^(1/(1-theta0))*n0/k(-1);
 
 # x0=1;
 # X=
@@ -26,6 +25,7 @@ theta0*
 
 #Q=(Z-theta0*X)/X;
 
+c(+1)=c*bet*(theta0(+1)*(k*s0(+1)/n0(+1))^(theta0(+1)-1)+1-delt);
 n0=(1-theta0)*(1-c/y*(1-x0/X))/(1-theta0-c/y*Q);
 s0=theta0*(1-c/y*(1-x0/X))/(theta0+c/y*Q);
 c/X=(s0*k)^theta0*(exp(a0)*n0)^(1-theta0)-i;

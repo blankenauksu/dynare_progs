@@ -13,11 +13,12 @@ function [ys_, params, info] = steadystate(ys_, exo_, params)
     ys_(5)=(1-params(16))*(1-coy*(1-x0ss/Xss))/(1-params(16)-Qss*coy);
     ys_(4)=(1-params(16))*(s0on0*ys_(3))^params(16)/(1-params(16)-Qss*coy);
     ys_(1)=coy*ys_(4);
-    ys_(6)=params(16);
-    ys_(7)=params(17);
-    ys_(8)=params(18);
-    ys_(9)=params(25);
-    ys_(10)=params(26);
-    ys_(11)=params(27);
+    ys_(6)=s0on0*ys_(5);
+    ys_(7)=params(16);
+    ys_(8)=params(17);
+    ys_(9)=params(18);
+    ys_(10)=params(25);
+    ys_(11)=params(26);
+    ys_(12)=params(27);
     % Auxiliary equations
 end

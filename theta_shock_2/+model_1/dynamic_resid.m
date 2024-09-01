@@ -22,17 +22,18 @@ function residual = dynamic_resid(T, y, x, params, steady_state, it_, T_flag)
 if T_flag
     T = model_1.dynamic_resid_tt(T, y, x, params, steady_state, it_);
 end
-residual = zeros(11, 1);
-    residual(1) = (y(13)) - ((1-y(14))*T(33)/(1-y(14)-T(34)));
-    residual(2) = (T(4)) - (y(14)*T(33)/(y(14)+T(34)));
-    residual(3) = (y(9)/T(30)) - (T(21)*T(24)-y(10));
-    residual(4) = (y(12)) - (T(27)/(1-y(14)-T(34)));
-    residual(5) = (y(10)) - (y(11)*(1+params(5))*(1+params(4))-y(2)*(1-params(3)));
-    residual(6) = (y(17)) - (params(22)*y(6)+x(it_, 4));
-    residual(7) = (y(18)) - (params(23)*y(7)+x(it_, 5));
-    residual(8) = (y(19)) - (params(24)*y(8)+x(it_, 6));
-    residual(9) = (y(14)) - (2*((1-params(13))*params(16)+params(13)*y(3))/(1+params(6)*exp(x(it_, 1))));
-    residual(10) = (y(15)) - (2*((1-params(14))*params(17)+params(14)*y(4))/(1+params(6)*exp(x(it_, 2))));
-    residual(11) = (y(16)) - (2*((1-params(15))*params(18)+params(15)*y(5))/(1+params(6)*exp(x(it_, 3))));
+residual = zeros(12, 1);
+    residual(1) = (y(20)) - (y(8)*params(2)*T(21));
+    residual(2) = (y(12)) - ((1-y(14))*T(30)/(1-y(14)-T(33)));
+    residual(3) = (y(13)) - (y(14)*T(30)/(y(14)+T(33)));
+    residual(4) = (y(8)/T(19)) - (T(23)*T(24)-y(9));
+    residual(5) = (y(11)) - (T(29)/(1-y(14)-T(33)));
+    residual(6) = (y(9)) - (y(10)*(1+params(5))*(1+params(4))-y(1)*(1-params(3)));
+    residual(7) = (y(17)) - (params(22)*y(5)+x(it_, 4));
+    residual(8) = (y(18)) - (params(23)*y(6)+x(it_, 5));
+    residual(9) = (y(19)) - (params(24)*y(7)+x(it_, 6));
+    residual(10) = (y(14)) - (2*((1-params(13))*params(16)+params(13)*y(2))/(1+params(6)*exp(x(it_, 1))));
+    residual(11) = (y(15)) - (2*((1-params(14))*params(17)+params(14)*y(3))/(1+params(6)*exp(x(it_, 2))));
+    residual(12) = (y(16)) - (2*((1-params(15))*params(18)+params(15)*y(4))/(1+params(6)*exp(x(it_, 3))));
 
 end
