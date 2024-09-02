@@ -4,23 +4,23 @@ model;
 # x0=1;
 # X=
 (exp(k(-1))*exp(s0)/exp(n0))^((theta0-theta0)*(1-eps))*(omega0/omega0)^eps* 
-(exp(a0)^(1-theta0)/exp(a0)^(1-theta0)*(theta0/theta0)^theta0*((1-theta0)*(1-theta0))^(1-theta0))^(1-eps)
+(exp(a0)^(1-theta0)/exp(a0)^(1-theta0)*(theta0/theta0)^theta0*((1-theta0)/(1-theta0))^(1-theta0))^(1-eps)
 +(exp(k(-1))*exp(s0)/exp(n0))^((theta0-theta1)*(1-eps))*(omega1/omega0)^eps* 
-(exp(a0)^(1-theta0)/exp(a1)^(1-theta1)*(theta0/theta1)^theta1*((1-theta0)*(1-theta1))^(1-theta1))^(1-eps)
+(exp(a0)^(1-theta0)/exp(a1)^(1-theta1)*(theta0/theta1)^theta1*((1-theta0)/(1-theta1))^(1-theta1))^(1-eps)
 +(exp(k(-1))*exp(s0)/exp(n0))^((theta0-theta2)*(1-eps))*(omega2/omega0)^eps* 
-(exp(a0)^(1-theta0)/exp(a2)^(1-theta2)*(theta0/theta2)^theta2*((1-theta0)*(1-theta2))^(1-theta2))^(1-eps)
+(exp(a0)^(1-theta0)/exp(a2)^(1-theta2)*(theta0/theta2)^theta2*((1-theta0)/(1-theta2))^(1-theta2))^(1-eps)
 ;
 
 # Z=
 theta0*
 exp((k(-1))*exp(s0)/exp(n0))^((theta0-theta0)*(1-eps))*(omega0/omega0)^eps* 
-(exp(a0)^(1-theta0)/exp(a0)^(1-theta0)*(theta0/theta0)^theta0*((1-theta0)*(1-theta0))^(1-theta0))^(1-eps)
+(exp(a0)^(1-theta0)/exp(a0)^(1-theta0)*(theta0/theta0)^theta0*((1-theta0)/(1-theta0))^(1-theta0))^(1-eps)
 +theta1*
 exp((k(-1))*exp(s0)/exp(n0))^((theta0-theta1)*(1-eps))*(omega1/omega0)^eps* 
-(exp(a0)^(1-theta0)/exp(a1)^(1-theta1)*(theta0/theta1)^theta1*((1-theta0)*(1-theta1))^(1-theta1))^(1-eps)
+(exp(a0)^(1-theta0)/exp(a1)^(1-theta1)*(theta0/theta1)^theta1*((1-theta0)/(1-theta1))^(1-theta1))^(1-eps)
 +theta2*
 exp((k(-1))*exp(s0)/exp(n0))^((theta0-theta2)*(1-eps))*(omega2/omega0)^eps* 
-(exp(a0)^(1-theta0)/exp(a2)^(1-theta2)*(theta0/theta2)^theta2*((1-theta0)*(1-theta2))^(1-theta2))^(1-eps)
+(exp(a0)^(1-theta0)/exp(a2)^(1-theta2)*(theta0/theta2)^theta2*((1-theta0)/(1-theta2))^(1-theta2))^(1-eps)
 ;
 
 #Q=(Z-theta0*X)/X;

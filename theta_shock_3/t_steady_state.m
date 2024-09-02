@@ -4,23 +4,23 @@ x0ss=1;
 
 Xss=
 (kso)^((theta_mean0-theta_mean0)*(1-eps))*(omega0/omega0)^eps* 
-(exp(a_mean0)^(1-theta_mean0)/exp(a_mean0)^(1-theta_mean0)*(theta_mean0/theta_mean0)^theta_mean0*((1-theta_mean0)*(1-theta_mean0))^(1-theta_mean0))^(1-eps)
+(exp(a_mean0)^(1-theta_mean0)/exp(a_mean0)^(1-theta_mean0)*(theta_mean0/theta_mean0)^theta_mean0*((1-theta_mean0)/(1-theta_mean0))^(1-theta_mean0))^(1-eps)
 +(kso)^((theta_mean0-theta_mean1)*(1-eps))*(omega1/omega0)^eps* 
-(exp(a_mean0)^(1-theta_mean0)/exp(a_mean1)^(1-theta_mean1)*(theta_mean0/theta_mean1)^theta_mean1*((1-theta_mean0)*(1-theta_mean1))^(1-theta_mean1))^(1-eps)
+(exp(a_mean0)^(1-theta_mean0)/exp(a_mean1)^(1-theta_mean1)*(theta_mean0/theta_mean1)^theta_mean1*((1-theta_mean0)/(1-theta_mean1))^(1-theta_mean1))^(1-eps)
 +(kso)^((theta_mean0-theta_mean2)*(1-eps))*(omega2/omega0)^eps* 
-(exp(a_mean0)^(1-theta_mean0)/exp(a_mean2)^(1-theta_mean2)*(theta_mean0/theta_mean2)^theta_mean2*((1-theta_mean0)*(1-theta_mean2))^(1-theta_mean2))^(1-eps)
+(exp(a_mean0)^(1-theta_mean0)/exp(a_mean2)^(1-theta_mean2)*(theta_mean0/theta_mean2)^theta_mean2*((1-theta_mean0)/(1-theta_mean2))^(1-theta_mean2))^(1-eps)
 ;
 
 Zss=
 theta_mean0*
 (kso)^((theta_mean0-theta_mean0)*(1-eps))*(omega0/omega0)^eps* 
-(exp(a_mean0)^(1-theta_mean0)/exp(a_mean0)^(1-theta_mean0)*(theta_mean0/theta_mean0)^theta_mean0*((1-theta_mean0)*(1-theta_mean0))^(1-theta_mean0))^(1-eps)
+(exp(a_mean0)^(1-theta_mean0)/exp(a_mean0)^(1-theta_mean0)*(theta_mean0/theta_mean0)^theta_mean0*((1-theta_mean0)/(1-theta_mean0))^(1-theta_mean0))^(1-eps)
 +theta_mean1*
 (kso)^((theta_mean0-theta_mean1)*(1-eps))*(omega1/omega0)^eps* 
-(exp(a_mean0)^(1-theta_mean0)/exp(a_mean1)^(1-theta_mean1)*(theta_mean0/theta_mean1)^theta_mean1*((1-theta_mean0)*(1-theta_mean1))^(1-theta_mean1))^(1-eps)
+(exp(a_mean0)^(1-theta_mean0)/exp(a_mean1)^(1-theta_mean1)*(theta_mean0/theta_mean1)^theta_mean1*((1-theta_mean0)/(1-theta_mean1))^(1-theta_mean1))^(1-eps)
 +theta_mean2*
 (kso)^((theta_mean0-theta_mean2)*(1-eps))*(omega2/omega0)^eps* 
-(exp(a_mean0)^(1-theta_mean0)/exp(a_mean2)^(1-theta_mean2)*(theta_mean0/theta_mean2)^theta_mean2*((1-theta_mean0)*(1-theta_mean2))^(1-theta_mean2))^(1-eps)
+(exp(a_mean0)^(1-theta_mean0)/exp(a_mean2)^(1-theta_mean2)*(theta_mean0/theta_mean2)^theta_mean2*((1-theta_mean0)/(1-theta_mean2))^(1-theta_mean2))^(1-eps)
 ;
 
 Qss=(Zss-theta_mean0*Xss)/Xss;
