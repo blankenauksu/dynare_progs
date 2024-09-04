@@ -271,8 +271,8 @@ M_.block_structure.block(1).bytecode_jacob_cols_to_sparse = [1 2 3 4 5 6 7 8 9 1
 M_.block_structure.block(2).Simulation_Type = 8;
 M_.block_structure.block(2).endo_nbr = 6;
 M_.block_structure.block(2).mfs = 6;
-M_.block_structure.block(2).equation = [ 3 4 6 1 2 5];
-M_.block_structure.block(2).variable = [ 4 2 3 1 5 6];
+M_.block_structure.block(2).equation = [ 2 4 6 1 3 5];
+M_.block_structure.block(2).variable = [ 4 2 3 1 6 5];
 M_.block_structure.block(2).is_linear = false;
 M_.block_structure.block(2).NNZDerivatives = 28;
 M_.block_structure.block(2).bytecode_jacob_cols_to_sparse = [3 7 8 9 10 11 12 16 17 18 ];
@@ -282,8 +282,8 @@ M_.block_structure.block(1).g1_sparse_colptr = int32([]);
 M_.block_structure.block(2).g1_sparse_rowval = int32([1 2 3 5 6 1 5 6 2 3 3 4 1 2 4 5 6 1 2 5 6 1 2 5 6 4 4 4 ]);
 M_.block_structure.block(2).g1_sparse_colval = int32([3 3 3 3 3 7 7 7 8 8 9 9 10 10 10 10 10 11 11 11 11 12 12 12 12 16 17 18 ]);
 M_.block_structure.block(2).g1_sparse_colptr = int32([1 1 1 6 6 6 6 9 11 13 18 22 26 26 26 26 27 28 29 ]);
-M_.block_structure.variable_reordered = [ 10 11 12 7 8 9 4 2 3 1 5 6];
-M_.block_structure.equation_reordered = [ 7 8 9 10 11 12 3 4 6 1 2 5];
+M_.block_structure.variable_reordered = [ 10 11 12 7 8 9 4 2 3 1 6 5];
+M_.block_structure.equation_reordered = [ 7 8 9 10 11 12 2 4 6 1 3 5];
 M_.block_structure.incidence(1).lead_lag = -1;
 M_.block_structure.incidence(1).sparse_IM = [
  2 3;
@@ -358,7 +358,7 @@ M_.block_structure.incidence(3).sparse_IM = [
  1 6;
  1 7;
 ];
-M_.block_structure.dyn_tmp_nbr = 48;
+M_.block_structure.dyn_tmp_nbr = 49;
 M_.state_var = [10 11 12 7 8 9 3 ];
 M_.maximum_lag = 1;
 M_.maximum_lead = 1;
@@ -423,8 +423,8 @@ M_.block_structure_stat.block(7).Simulation_Type = 6;
 M_.block_structure_stat.block(7).endo_nbr = 6;
 M_.block_structure_stat.block(7).mfs = 6;
 M_.block_structure_stat.block(7).equation = [ 1 2 3 4 5 6];
-M_.block_structure_stat.block(7).variable = [ 1 4 5 3 6 2];
-M_.block_structure_stat.variable_reordered = [ 10 11 12 7 8 9 1 4 5 3 6 2];
+M_.block_structure_stat.block(7).variable = [ 3 4 1 5 6 2];
+M_.block_structure_stat.variable_reordered = [ 10 11 12 7 8 9 3 4 1 5 6 2];
 M_.block_structure_stat.equation_reordered = [ 7 8 9 10 11 12 1 2 3 4 5 6];
 M_.block_structure_stat.incidence.sparse_IM = [
  1 1;
@@ -504,9 +504,9 @@ M_.block_structure_stat.block(5).g1_sparse_colptr = int32([1 2 ]);
 M_.block_structure_stat.block(6).g1_sparse_rowval = int32([1 ]);
 M_.block_structure_stat.block(6).g1_sparse_colval = int32([1 ]);
 M_.block_structure_stat.block(6).g1_sparse_colptr = int32([1 2 ]);
-M_.block_structure_stat.block(7).g1_sparse_rowval = int32([1 2 3 4 5 2 3 5 1 2 3 4 5 1 2 3 4 5 6 1 2 3 4 5 4 6 ]);
-M_.block_structure_stat.block(7).g1_sparse_colval = int32([1 1 1 1 1 2 2 2 3 3 3 3 3 4 4 4 4 4 4 5 5 5 5 5 6 6 ]);
-M_.block_structure_stat.block(7).g1_sparse_colptr = int32([1 6 9 14 20 25 27 ]);
+M_.block_structure_stat.block(7).g1_sparse_rowval = int32([1 2 3 4 5 6 2 3 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 4 6 ]);
+M_.block_structure_stat.block(7).g1_sparse_colval = int32([1 1 1 1 1 1 2 2 2 3 3 3 3 3 4 4 4 4 4 5 5 5 5 5 6 6 ]);
+M_.block_structure_stat.block(7).g1_sparse_colptr = int32([1 7 10 15 20 25 27 ]);
 M_.static_g1_sparse_rowval = int32([1 2 3 4 5 4 6 1 2 3 4 5 6 2 3 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 10 2 3 4 5 11 2 3 4 5 12 2 3 4 5 7 2 3 4 5 8 2 3 4 5 9 ]);
 M_.static_g1_sparse_colval = int32([1 1 1 1 1 2 2 3 3 3 3 3 3 4 4 4 5 5 5 5 5 6 6 6 6 6 7 7 7 7 7 7 8 8 8 8 8 9 9 9 9 9 10 10 10 10 10 11 11 11 11 11 12 12 12 12 12 ]);
 M_.static_g1_sparse_colptr = int32([1 6 8 14 17 22 27 33 38 43 48 53 58 ]);
@@ -514,7 +514,7 @@ M_.params(1) = 0.5;
 eps = M_.params(1);
 M_.params(2) = 0.95;
 bet = M_.params(2);
-M_.params(3) = 0.05;
+M_.params(3) = 0.1;
 delt = M_.params(3);
 M_.params(4) = 0.0;
 gamma0 = M_.params(4);
@@ -528,11 +528,11 @@ M_.params(8) = 0.3333333333333333;
 omega1 = M_.params(8);
 M_.params(9) = 0.3333333333333333;
 omega2 = M_.params(9);
-M_.params(10) = 0;
+M_.params(10) = 0.01;
 theta_var0 = M_.params(10);
-M_.params(11) = 0;
+M_.params(11) = 0.01;
 theta_var1 = M_.params(11);
-M_.params(12) = 0;
+M_.params(12) = 0.01;
 theta_var2 = M_.params(12);
 M_.params(13) = 0;
 theta_rho0 = M_.params(13);
@@ -542,9 +542,9 @@ M_.params(15) = 0;
 theta_rho2 = M_.params(15);
 M_.params(16) = 0.35;
 theta_mean0 = M_.params(16);
-M_.params(17) = 0.1;
+M_.params(17) = 0.35;
 theta_mean1 = M_.params(17);
-M_.params(18) = 0.5;
+M_.params(18) = 0.35;
 theta_mean2 = M_.params(18);
 M_.params(19) = 0.01;
 a_var0 = M_.params(19);
@@ -564,6 +564,27 @@ M_.params(26) = 0;
 a_mean1 = M_.params(26);
 M_.params(27) = 0;
 a_mean2 = M_.params(27);
+%
+% INITVAL instructions
+%
+options_.initval_file = false;
+oo_.steady_state(1) = 0.186403;
+oo_.steady_state(2) = 0.358507;
+oo_.steady_state(3) = 1.27678;
+oo_.steady_state(4) = 0.446873;
+oo_.steady_state(5) = (-0.721121);
+oo_.steady_state(7) = 0.35;
+oo_.steady_state(8) = 0.35;
+oo_.steady_state(9) = 0.35;
+oo_.steady_state(10) = 0;
+oo_.steady_state(11) = 0;
+oo_.steady_state(12) = 0;
+if M_.exo_nbr > 0
+	oo_.exo_simul = ones(M_.maximum_lag,1)*oo_.exo_steady_state';
+end
+if M_.exo_det_nbr > 0
+	oo_.exo_det_simul = ones(M_.maximum_lag,1)*oo_.exo_det_steady_state';
+end
 steady;
 %
 % SHOCKS instructions
@@ -610,7 +631,6 @@ end
 if exist('options_mom_', 'var') == 1
   save([M_.dname filesep 'Output' filesep 'model_1_results.mat'], 'options_mom_', '-append');
 end
-disp('Note: 6 warning(s) encountered in the preprocessor')
 if ~isempty(lastwarn)
   disp('Note: warning(s) encountered in MATLAB/Octave code')
 end
