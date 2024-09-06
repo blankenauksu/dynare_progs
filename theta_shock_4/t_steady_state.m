@@ -25,7 +25,7 @@ theta_mean0*
 
 Qss=(Zss-theta_mean0*Xss)/Xss;
 
-coy=(1-bet*(1-delt)-bet*((1+gamman)*(1+gamma0)-(1-delt))*theta_mean0)/(1-bet*(1-delt)+bet*((1+gamman)*(1+gamma0)-(1-delt))*Qss);
+coy=(1-bet*(1-delt)-bet*((1+gamman)*(1+gamma0)-(1-delt))*theta_mean0)/(1/Xss*(1-bet*(1-delt)*(1+Xss-x0ss))+bet*((1+gamman)*(1+gamma0)-(1-delt))*Qss);
 
 s0on0=theta_mean0/(1-theta_mean0)*((1-theta_mean0)-coy*Qss)/(theta_mean0+coy*Qss);
 

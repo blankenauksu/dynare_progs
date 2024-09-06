@@ -24,9 +24,16 @@ exp((k(-1))*exp(s0)/exp(n0))^((theta0-theta2)*(1-eps))*(omega2/omega0)^eps*
 ;
 
 #Q=(Z-theta0*X)/X;
-
+Qss=(Zss-theta_mean0*Xss)/Xss;
 exp(c(+1))=exp(c)*bet*(theta0(+1)*(exp(k)*exp(s0(+1))/exp(n0(+1)))^(theta0(+1)-1)+1-delt);
 exp(n0)=(1-theta0)*(1-exp(c)/exp(y)*(1-x0/X))/(1-theta0-exp(c)/exp(y)*Q);
+
+n0=(1-theta_mean0)*(1-coy*(1-x0ss/Xss))/(1-theta_mean0-coy*Qss);
+
+
+
+
+
 exp(s0)=theta0*(1-exp(c)/exp(y)*(1-x0/X))/(theta0+exp(c)/exp(y)*Q);
 exp(c)/X=(exp(s0)*exp(k(-1)))^theta0*(exp(a0)*exp(n0))^(1-theta0)-i;
 exp(y)=(1-theta0)*exp(a0)^(1-theta0)*exp(k(-1))^theta0*(exp(s0)/exp(n0))^theta0/(1-theta0-exp(c)/exp(y)*Q);

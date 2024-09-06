@@ -2,7 +2,7 @@ parameters eps,bet,delt,gamma0,gamman,vp,omega0,omega1,omega2,theta_var0,theta_v
 
 eps = 0.5;
 bet = 0.95;
-delt = 0.1;
+delt = 1;
 gamma0 = 0.0;
 gamman = 0.0;
 vp = 1;
@@ -16,7 +16,7 @@ theta_rho0 = 0.1;
 theta_rho1 = 0.1;
 theta_rho2 = 0.1;
 theta_mean0 = 0.35;
-theta_mean1 = 0.35;
+theta_mean1 = 0.1;
 theta_mean2 = 0.35;
 a_var0 = 0.01;
 a_var1 = 0.01;
