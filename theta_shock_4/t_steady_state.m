@@ -1,40 +1,39 @@
 steady_state_model;
-kso=(theta_mean0/(1/bet-1+delt))^(1/(1-theta_mean0));
+gam=((1+gamman)*(1+gamma0))-(1-delt);
+kson=(bet*theta_mean0/(1-(bet*(1-delt))))^(1/(1-theta_mean0));
 x0ss=1;
 
 Xss=
-(kso)^((theta_mean0-theta_mean0)*(1-eps))*(omega0/omega0)^eps* 
+(kson)^((theta_mean0-theta_mean0)*(1-eps))*(omega0/omega0)^eps* 
 (exp(a_mean0)^(1-theta_mean0)/exp(a_mean0)^(1-theta_mean0)*(theta_mean0/theta_mean0)^theta_mean0*((1-theta_mean0)/(1-theta_mean0))^(1-theta_mean0))^(1-eps)
-+(kso)^((theta_mean0-theta_mean1)*(1-eps))*(omega1/omega0)^eps* 
++(kson)^((theta_mean0-theta_mean1)*(1-eps))*(omega1/omega0)^eps* 
 (exp(a_mean0)^(1-theta_mean0)/exp(a_mean1)^(1-theta_mean1)*(theta_mean0/theta_mean1)^theta_mean1*((1-theta_mean0)/(1-theta_mean1))^(1-theta_mean1))^(1-eps)
-+(kso)^((theta_mean0-theta_mean2)*(1-eps))*(omega2/omega0)^eps* 
++(kson)^((theta_mean0-theta_mean2)*(1-eps))*(omega2/omega0)^eps* 
 (exp(a_mean0)^(1-theta_mean0)/exp(a_mean2)^(1-theta_mean2)*(theta_mean0/theta_mean2)^theta_mean2*((1-theta_mean0)/(1-theta_mean2))^(1-theta_mean2))^(1-eps)
 ;
 
 Zss=
 theta_mean0*
-(kso)^((theta_mean0-theta_mean0)*(1-eps))*(omega0/omega0)^eps* 
+(kson)^((theta_mean0-theta_mean0)*(1-eps))*(omega0/omega0)^eps* 
 (exp(a_mean0)^(1-theta_mean0)/exp(a_mean0)^(1-theta_mean0)*(theta_mean0/theta_mean0)^theta_mean0*((1-theta_mean0)/(1-theta_mean0))^(1-theta_mean0))^(1-eps)
 +theta_mean1*
-(kso)^((theta_mean0-theta_mean1)*(1-eps))*(omega1/omega0)^eps* 
+(kson)^((theta_mean0-theta_mean1)*(1-eps))*(omega1/omega0)^eps* 
 (exp(a_mean0)^(1-theta_mean0)/exp(a_mean1)^(1-theta_mean1)*(theta_mean0/theta_mean1)^theta_mean1*((1-theta_mean0)/(1-theta_mean1))^(1-theta_mean1))^(1-eps)
 +theta_mean2*
-(kso)^((theta_mean0-theta_mean2)*(1-eps))*(omega2/omega0)^eps* 
+(kson)^((theta_mean0-theta_mean2)*(1-eps))*(omega2/omega0)^eps* 
 (exp(a_mean0)^(1-theta_mean0)/exp(a_mean2)^(1-theta_mean2)*(theta_mean0/theta_mean2)^theta_mean2*((1-theta_mean0)/(1-theta_mean2))^(1-theta_mean2))^(1-eps)
 ;
 
 Qss=(Zss-theta_mean0*Xss)/Xss;
 
-coy=(1-bet*(1-delt)-bet*((1+gamman)*(1+gamma0)-(1-delt))*theta_mean0)/(1/Xss*(1-bet*(1-delt)*(1+Xss-x0ss))+bet*((1+gamman)*(1+gamma0)-(1-delt))*Qss);
+coy=(1-bet*(1-delt+gam*theta_mean0))/(1-bet*(1-delt-gam*Qss));
 
-s0on0=theta_mean0/(1-theta_mean0)*((1-theta_mean0)-coy*Qss)/(theta_mean0+coy*Qss);
-
-k=s0on0^(-1)*(theta_mean0/(1/bet-1+delt))^(1/(1-theta_mean0));
-i=k*(1+gamman)*(1+gamma0)-(1-delt)*k;
-n0=(1-theta_mean0)*(1-coy*(1-x0ss/Xss))/(1-theta_mean0-coy*Qss);
-y=(k*s0on0)^theta_mean0*(1-theta_mean0)/(1-theta_mean0-coy*Qss);
+y=(1-theta_mean0)*(kson)^theta_mean0/(1-theta_mean0-coy*Qss);
 c=coy*y;
-s0=s0on0*n0;
+n0=(1-theta_mean0)*(1-coy*(1-x0ss/Xss))/(1-theta_mean0-coy*Qss);
+s0=theta_mean0*(1-coy*(1-x0ss/Xss))/(theta_mean0+coy*Qss);
+i=kson^theta_mean0*n0-c/Xss;
+k=i/gam;
 k=log(k);
 i=i;
 n0=log(n0);
