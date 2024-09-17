@@ -1,0 +1,65 @@
+Starting Dynare (version 6.1).
+Calling Dynare with arguments: none
+Preprocessing time: 0h00m00s.
+
+STEADY-STATE RESULTS:
+
+n_0 		 0.436782
+n_1 		 0.281609
+n_2 		 0.281609
+s_0 		 0.436782
+s_1 		 0.281609
+s_2 		 0.281609
+k   		 9.63139
+k_0 		 9.63139
+k_1 		 9.63139
+k_2 		 9.63139
+c_0 		 0.87396
+c_1 		 0.87396
+c_2 		 0.87396
+i   		 0.481569
+a_0 		 0
+a_1 		 0
+a_2 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+               0                0                0
+               0                0                0
+               0                0                0
+             0.9              0.9                0
+             0.9              0.9                0
+             0.9              0.9                0
+          0.9314           0.9314                0
+           1.193            1.193                0
+       4.327e+16       -4.327e+16                0
+       1.113e+17        1.113e+17                0
+       1.398e+17       -1.398e+17                0
+       1.488e+17       -1.488e+17                0
+       4.506e+17       -4.506e+17                0
+       8.505e+17       -8.505e+17                0
+       8.751e+17       -8.751e+17                0
+       4.997e+18       -4.997e+18                0
+       2.681e+20        2.681e+20                0
+       1.024e+34        1.024e+34                0
+         1.2e+34          1.2e+34                0
+       3.381e+34        3.381e+34                0
+
+There are 13 eigenvalue(s) larger than 1 in modulus for 13 forward-looking variable(s)
+The rank condition is verified.
+
+
+--------------------------------------------------------
+MODEL SIMULATION:
+
+Iter: 1,	 err. = 0.1,	 time = 2.55837
+Iter: 2,	 err. = 0.0110486,	 time = 2.65646
+Iter: 3,	 err. = 3.73288e-06,	 time = 2.41888
+
+Total time of simulation: 7.65514.
+--------------------------------------------------------
+
+
+Perfect foresight solution found.
+
+Total computing time : 0h00m08s

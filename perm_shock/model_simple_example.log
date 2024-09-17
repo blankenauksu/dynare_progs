@@ -1,0 +1,39 @@
+Starting Dynare (version 6.1).
+Calling Dynare with arguments: none
+Preprocessing time: 0h00m00s.
+
+STEADY-STATE RESULTS:
+
+c               		 1.53061
+k               		 12.7551
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+           0.935            0.935                0
+           1.123            1.123                0
+             Inf             -Inf                0
+
+There are 2 eigenvalue(s) larger than 1 in modulus for 2 forward-looking variable(s)
+The rank condition is verified.
+
+
+STEADY-STATE RESULTS:
+
+c               		 2.20408
+k               		 18.3673
+
+--------------------------------------------------------
+MODEL SIMULATION:
+
+Iter: 1,	 err. = 5.92857,	 time = 0.149132
+Iter: 2,	 err. = 0.0312307,	 time = 0.140556
+Iter: 3,	 err. = 1.74009e-05,	 time = 0.124611
+Iter: 4,	 err. = 2.68894e-10,	 time = 0.13372
+
+Total time of simulation: 0.55777.
+--------------------------------------------------------
+
+
+Perfect foresight solution found.
+
+Total computing time : 0h00m01s

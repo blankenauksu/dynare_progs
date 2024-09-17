@@ -1,0 +1,17 @@
+Starting Dynare (version 6.1).
+Calling Dynare with arguments: none
+Preprocessing time: 0h00m00s.
+
+STEADY-STATE RESULTS:
+
+c      		 1.33909
+i      		 0.596816
+k      		 6.60195
+y      		 1.93591
+n0     		 0.613365
+theta0 		 0.35
+theta1 		 0.35
+theta2 		 0.35
+a0     		 0
+a1     		 0
+a2     		 0

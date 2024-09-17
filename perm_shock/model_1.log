@@ -1,0 +1,61 @@
+Starting Dynare (version 6.1).
+Calling Dynare with arguments: none
+Preprocessing time: 0h00m01s.
+
+STEADY-STATE RESULTS:
+
+n_0              		 0.436782
+n_1              		 0.281609
+n_2              		 0.281609
+s_0              		 0.436782
+s_1              		 0.281609
+s_2              		 0.281609
+k                		 9.63139
+k_0              		 9.63139
+k_1              		 9.63139
+k_2              		 9.63139
+c_0              		 0.87396
+c_1              		 0.87396
+c_2              		 0.87396
+i                		 0.48157
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+               0                0                0
+               0                0                0
+               0                0                0
+          0.9314           0.9314                0
+           1.193            1.193                0
+             Inf              Inf                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+             Inf              Inf                0
+             Inf             -Inf                0
+             Inf              Inf                0
+             Inf              Inf                0
+             Inf              Inf                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+
+There are 13 eigenvalue(s) larger than 1 in modulus for 13 forward-looking variable(s)
+The rank condition is verified.
+
+
+--------------------------------------------------------
+MODEL SIMULATION:
+
+Iter: 1,	 err. = 1.03224,	 time = 1.24831
+Iter: 2,	 err. = 0.336588,	 time = 1.25251
+Iter: 3,	 err. = 0.0698239,	 time = 1.3819
+Iter: 4,	 err. = 0.00322113,	 time = 1.49898
+Iter: 5,	 err. = 4.67047e-06,	 time = 1.30247
+
+Total time of simulation: 6.7091.
+--------------------------------------------------------
+
+
+Perfect foresight solution found.
+
+Total computing time : 0h00m07s

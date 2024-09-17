@@ -1,0 +1,40 @@
+function [residual, T_order, T] = dynamic_resid(y, x, params, steady_state, T_order, T)
+if nargin < 6
+    T_order = -1;
+    T = NaN(113, 1);
+end
+[T_order, T] = model_1.sparse.dynamic_resid_tt(y, x, params, steady_state, T_order, T);
+residual = NaN(32, 1);
+    residual(1) = (exp(y(40))) - (exp(y(7))*exp(y(36))/T(15));
+    residual(2) = (exp(y(41))) - (exp(y(7))*exp(y(37))/T(19));
+    residual(3) = (exp(y(42))) - (exp(y(7))*exp(y(38))/T(23));
+    residual(4) = (T(89)*T(106)+T(95)*T(107)) - (T(110));
+    residual(5) = (T(91)*T(111)+T(97)*T(112)) - (T(110));
+    residual(6) = (T(81)*T(43)*T(101)) - (T(113));
+    residual(7) = (T(82)*T(43)*T(103)) - (T(113));
+    residual(8) = (params(4)*(T(59)/(1-params(10)*T(55))+T(45)*T(105)/T(39))) - (T(80)/T(83)/T(54));
+    residual(9) = (T(39)) - (exp(y(46))+exp(y(7))*(1-params(8))-T(60));
+    residual(10) = (1) - (T(23)+T(15)+T(19));
+    residual(11) = (1) - (exp(y(38))+exp(y(36))+exp(y(37)));
+    residual(12) = (exp(y(43))) - (T(43)*T(62)*T(61)*T(77)-exp(y(46)));
+    residual(13) = (exp(y(44))) - (T(43)*T(64)*T(63)*T(78));
+    residual(14) = (exp(y(45))) - (T(43)*T(66)*T(65)*T(79));
+    residual(15) = (y(62)) - (params(14)*y(30)+x(1));
+    residual(16) = (y(63)) - (params(15)*y(31)+x(2));
+    residual(17) = (y(64)) - (params(16)*y(32)+x(3));
+    residual(18) = (exp(y(47))) - (exp(y(43))+exp(y(46)));
+    residual(19) = (exp(y(53))) - (1);
+    residual(20) = (exp(y(54))) - (params(6)/params(5)*T(67)^T(7));
+    residual(21) = (exp(y(55))) - (params(7)/params(5)*T(68)^T(7));
+    residual(22) = (exp(y(48))) - (exp(y(46))+exp(y(43))*exp(y(53))+exp(y(44))*exp(y(54))+exp(y(45))*exp(y(55)));
+    residual(23) = (exp(y(49))) - (1);
+    residual(24) = (y(50)) - ((exp(y(48))*T(69)-T(70))/T(70));
+    residual(25) = (y(51)) - ((T(71)+T(72)+T(73))/T(70));
+    residual(26) = (y(52)) - ((T(74)+T(75)+T(76))/T(70));
+residual(27) = y(56);
+residual(28) = y(57);
+residual(29) = y(58);
+residual(30) = y(59);
+residual(31) = y(60);
+residual(32) = y(61);
+end
